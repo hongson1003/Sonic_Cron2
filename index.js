@@ -19,8 +19,8 @@ const pingCronA = async () => {
   }
 };
 
-// Cài đặt cron job để gọi Cron A mỗi 3 phút
-cron.schedule("*/3 * * * *", async () => {
+// Cài đặt cron job để gọi Cron A mỗi 2 phút
+cron.schedule("*/2 * * * *", async () => {
   console.log(
     `[${new Date().toISOString()}] Running cron job to ping Cron A...`
   );
