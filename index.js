@@ -26,7 +26,7 @@ cron.schedule("* * * * *", async () => {
 });
 
 // Route để nhận yêu cầu từ Cron A
-app.get("/ping-from-crona", async (req, res) => {
+app.get("/", async (req, res) => {
   console.log(
     `[${new Date().toString()}] Received ping from Cron A, responding...`
   );
